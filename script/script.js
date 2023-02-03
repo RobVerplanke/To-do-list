@@ -42,10 +42,11 @@ function addItem(){
 };
 
 // Functie om item van lijst te verwijderen
-function removeItem(item){
+function removeItem(listItem){
     let confirmRemove = confirm("Verwijderen?")
     if (confirmRemove == true){
-    item.innerHTML ="";
+        items.removeChild(listItem);
+        //listItem.innerHTML ="";
     }
 };
 
