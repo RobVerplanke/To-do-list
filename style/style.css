@@ -15,12 +15,23 @@ button{
     width: 6em;
 }
 
+ul{
+    padding: 1em 0em 0em 1.3em;
+    margin:0;
+}
+
 li{
     list-style-type: none;
+    margin-bottom: 2em;
 }
 
 #check{
     margin-right: 2em;
+}
+
+.checked{
+    text-decoration:line-through;
+    color: green;
 }
 
 #container{
@@ -50,8 +61,14 @@ li{
 }
 
 #list{
+    overflow: hidden;
+    display: flex;
+    justify-content:flex-start;
+
     max-width: 30em;
     max-height: 50em;
+    padding:0;
+    margin:0;
 
-    border-top: 1px solid rgb(192, 192, 192);
+    /* border-top: 1px solid rgb(192, 192, 192); */
 }

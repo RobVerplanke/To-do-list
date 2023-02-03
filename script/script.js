@@ -25,6 +25,18 @@ function addItem(){
     let listItem = document.createElement("li");
     listItem.append(checkbox, inputField.value);
     
+    checkbox.addEventListener("change", function(e){
+        if (this.checked) {
+            listItem.classList.add("checked");
+            console.log("i am checked " + listItem.classList);
+        } else {
+            listItem.classList.remove("checked")
+            console.log("i am not checked " + listItem.classList);
+        }
+    });
+
+    
+    
     items.append(listItem);
 };
 
